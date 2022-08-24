@@ -21,10 +21,10 @@
 				<div>
 					<div>
 						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="page2.html">Music by Title</a></li>
-							<li><a href="page3.html">Music by Genre</a></li>
-							<li><a href="contact.php">Contact</a></li>
+							<li><a href="indexv2.html">Home</a></li>
+							<li><a href="page2c2.html">Music by Title</a></li>
+							<li><a href="page2v2.html">Music by Genre</a></li>
+							<li><a href="contactv2.php">Contact</a></li>
 						</ul>
 					</div>
 				</div>
@@ -32,8 +32,8 @@
 		</div>
 		
 		<div class="nav">
-			<ul><a href="login.php">Login</a></ul>
-			<li><a href="signup.php">Sign Up</a></li>
+			<ul><a href="loginv2.php">Login</a></ul>
+			<li><a href="signupv2.php">Sign Up</a></li>
 		</div>
 		
 		<div class="heading">
@@ -41,8 +41,8 @@
 		</div>
 		<br><br><br><br><br><br>
 		
-		<div class="contact_container2">
-			<h2>Sign Up</h2>
+		<div class="contact_container3">
+			<h2>Sign Up</h2><br>
 			<form action="connect2.php" method="post" target="_blank">
 			<!-- Username Field -->
 			<div class="row">
@@ -50,21 +50,21 @@
 					<h3><label for="Username">Username</label></h3>
 				</div>
 				<div class="column2">
-					<input type="text" id="Username" name="Username" placeholder="Username" style="width:350px;">
+					<input type="text" id="Username" name="Username" placeholder="Username" style="width:350px; height:25px;">
 				</div>
 			</div>
-
+			<br>
 			<!-- Username Field -->
 			<div class="row">
 				<div class="column">
 					<h3><label for="Password">Password</label></h3>
 				</div>
 				<div class="column2">
-					<input type="text" id="Password" name="Password" placeholder="Password" style="width:350px;">
+					<input type="text" id="Password" name="Password" placeholder="Password" style="width:350px; height:25px;">
 				</div>
 			</div>
 
-			<br>
+			<br><br>
 			
 			<!-- Submit Button -->
 			<div class="row2">
@@ -76,7 +76,7 @@
 		<br><br><br>
 		
 		<!-- Copyright Statement -->
-		<div class="footer3">
+		<div class="footer4">
 			<p>&copy; Copyright Jake Boyd, all rights reserved, Tawa College 2022</p>
 		</div>
 
