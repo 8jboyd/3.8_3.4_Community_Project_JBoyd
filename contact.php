@@ -45,7 +45,7 @@
 		</div>
 		<br><br><br><br><br><br>
 		
-		<div class="contact_container">
+		<div class="contact_container4">
 			<h2>Contact Form</h2>
 			<form action="connect.php" method="post" target="_blank">
 			<!-- Full Name Field -->
@@ -54,7 +54,7 @@
 					<h3><label for="Full_Name">Full Name</label></h3>
 				</div>
 				<div class="column2">
-					<input type="text" id="Full_Name" name="Full_Name" placeholder="Your Full Name" style="width:350px;">
+					<input type="text" id="Full_Name" name="Full_Name" placeholder="Your Full Name" style="width:350px; height:25px;">
 				</div>
 			</div>
 
@@ -64,7 +64,7 @@
 					<h3><label for="Username">Username</label></h3>
 				</div>
 				<div class="column2">
-					<input type="text" id="Username" name="Username" placeholder="Your Username" style="width:350px;">
+					<input type="text" id="Username" name="Username" placeholder="Your Username" style="width:350px; height:25px;">
 				</div>
 			</div>
 
@@ -74,7 +74,7 @@
 					<h3><label for="Email">Email Address</label></h3>
 				</div>
 				<div class="column2">
-					<input type="text" id="Email" name="Email" placeholder="Your Email Address" style="width:350px;">
+					<input type="text" id="Email" name="Email" placeholder="Your Email Address" style="width:350px; height:25px;">
 				</div>
 			</div>
 
