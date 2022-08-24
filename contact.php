@@ -25,10 +25,10 @@
 				<div>
 					<div>
 						<ul>
-							<li><a href="indexv2.html">Home</a></li>
-							<li><a href="page2v2.html">Music by Title</a></li>
-							<li><a href="page2v2.html">Music by Genre</a></li>
-							<li><a href="contactv2.php">Contact</a></li>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="page2.html">Music by Title</a></li>
+							<li><a href="page3.html">Music by Genre</a></li>
+							<li><a href="contact.php">Contact</a></li>
 						</ul>
 					</div>
 				</div>
@@ -36,8 +36,8 @@
 		</div>
 		
 		<div class="nav">
-			<ul><a href="loginv2.php">Login</a></ul>
-			<li><a href="signupv2.php">Sign Up</a></li>
+			<ul><a href="login.php">Login</a></ul>
+			<li><a href="signup.php">Sign Up</a></li>
 		</div>
 		
 		<div class="heading">
@@ -45,7 +45,7 @@
 		</div>
 		<br><br><br><br><br><br>
 		
-		<div class="contact_container4">
+		<div class="contact_container">
 			<h2>Contact Form</h2>
 			<form action="connect.php" method="post" target="_blank">
 			<!-- Full Name Field -->
@@ -54,7 +54,7 @@
 					<h3><label for="Full_Name">Full Name</label></h3>
 				</div>
 				<div class="column2">
-					<input type="text" id="Full_Name" name="Full_Name" placeholder="Your Full Name" style="width:350px; height:25px;">
+					<input type="text" id="Full_Name" name="Full_Name" placeholder="Your Full Name" style="width:350px;">
 				</div>
 			</div>
 
@@ -64,7 +64,7 @@
 					<h3><label for="Username">Username</label></h3>
 				</div>
 				<div class="column2">
-					<input type="text" id="Username" name="Username" placeholder="Your Username" style="width:350px; height:25px;">
+					<input type="text" id="Username" name="Username" placeholder="Your Username" style="width:350px;">
 				</div>
 			</div>
 
@@ -74,7 +74,7 @@
 					<h3><label for="Email">Email Address</label></h3>
 				</div>
 				<div class="column2">
-					<input type="text" id="Email" name="Email" placeholder="Your Email Address" style="width:350px; height:25px;">
+					<input type="text" id="Email" name="Email" placeholder="Your Email Address" style="width:350px;">
 				</div>
 			</div>
 
