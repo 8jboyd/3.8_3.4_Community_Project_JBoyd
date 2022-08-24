@@ -164,7 +164,9 @@
 	background-color: white;
     border-radius: 10px;
 	margin-top: 10px;
+	margin-left: 5px;
 	margin-right: 10px;
+	padding-right: 10px;
 }
 
 ul a:link{color: black;} /* Unvisited link */
