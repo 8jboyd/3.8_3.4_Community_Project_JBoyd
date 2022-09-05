@@ -62,7 +62,6 @@
 		</div>
 		
 		<div class="nav">
-			<ol><a href="logout.php">Log Out</a></ol>
 			<ul><a href="login.php">Login</a></ul>
 			<li><a href="signup.php">Sign Up</a></li>
 		</div>
@@ -72,8 +71,8 @@
 		</div>
 		<br><br><br><br><br><br>
 		
-		<div class="contact_container3">
-			<h2>Login</h2><br>
+		<div class="contact_container2">
+			<h2>Login</h2>
 			<form action="connect3.php" method="post" target="_blank">
 			<!-- Username Field -->
 			<div class="row">
@@ -81,21 +80,21 @@
 					<h3><label for="Username">Username</label></h3>
 				</div>
 				<div class="column2">
-					<input type="text" id="Username" name="Username" placeholder="Username" style="width:350px; height:25px;">
+					<input type="text" id="Username" name="Username" placeholder="Username" style="width:350px;">
 				</div>
 			</div>
-			<br>
+
 			<!-- Username Field -->
 			<div class="row">
 				<div class="column">
 					<h3><label for="Password">Password</label></h3>
 				</div>
 				<div class="column2">
-					<input type="password" id="Password" name="Password" placeholder="Password" style="width:350px; height:25px;">
+					<input type="text" id="Password" name="Password" placeholder="Password" style="width:350px;">
 				</div>
 			</div>
 
-			<br><br>
+			<br>
 			
 			<!-- Submit Button -->
 			<div class="row2">
@@ -107,7 +106,7 @@
 		<br><br><br>
 		
 		<!-- Copyright Statement -->
-		<div class="footer4">
+		<div class="footer3">
 			<p>&copy; Copyright Jake Boyd, all rights reserved, Tawa College 2022</p>
 		</div>
 
