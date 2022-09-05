@@ -32,6 +32,7 @@
 		</div>
 		
 		<div class="nav">
+			<ol><a href="logout.php">Log Out</a></ol>
 			<ul><a href="login.php">Login</a></ul>
 			<li><a href="signup.php">Sign Up</a></li>
 		</div>
@@ -60,7 +61,7 @@
 					<h3><label for="Password">Password</label></h3>
 				</div>
 				<div class="column2">
-					<input type="text" id="Password" name="Password" placeholder="Password" style="width:350px; height:25px;">
+					<input type="password" id="Password" name="Password" placeholder="Password" style="width:350px; height:25px;">
 				</div>
 			</div>
 
