@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap'); /* font-family: 'Lato', sans-serif; */
+
 .menu-wrap{
 	position: fixed;
 	top: 0;
@@ -140,8 +142,8 @@
 
 /* Start of nav code */
 .nav{
-	height: 9.5vh;
-	background-color: black;
+	height: 10.5vh;
+	background-color: #002B51;
 	font-size: 16px;
 	font-family: 'Poppins', sans-serif;	
 	font-weight: bold;
@@ -160,11 +162,11 @@
 	text-decoration: none;
 	overflow: none;
 	z-index: 4;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Lato', sans-serif;
 	background-color: white;
     border-radius: 10px;
 	margin-top: 10px;
-	margin-left: 5px;
+	margin-left: 10px;
 	margin-right: 10px;
 	padding-right: 10px;
 }
@@ -178,19 +180,41 @@ ul a:active{color: black;} /* Selected link */
 .nav li a{
 	float: right;
 	font-size: 16px;
-	color: black;
+	color: white;
 	text-align: left;
 	padding: 14px;
 	text-decoration: none;
 	overflow: none;
 	z-index: 4;
-	font-family: 'Poppins', sans-serif;
-	background-color: red;
+	font-family: 'Lato', sans-serif;
+	background-color: blue;
   	border-radius: 10px;
 	margin-top: 10px;
 }
 
 li a:link{color: black;} /* Unvisited link */
 li a:visited{color: black;} /* Visited link */
-li a:hover{color: white; background-color: darkred;} /* Mouse hover link */
+li a:hover{color: white; background-color: #020B64;} /* Mouse hover link */
 li a:active{color: black;} /* Selected link */
+
+/* Log Out Nav Link */
+.nav ol a{
+	float: right;
+	font-size: 16px;
+	color: white;
+	text-align: left;
+	padding: 14px;
+	text-decoration: none;
+	overflow: none;
+	z-index: 4;
+	font-family: 'Lato', sans-serif;
+	background-color: blue;
+  	border-radius: 10px;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+ol a:link{color: black;} /* Unvisited link */
+ol a:visited{color: black;} /* Visited link */
+ol a:hover{color: white; background-color: #020B64;} /* Mouse hover link */
+ol a:active{color: black;} /* Selected link */
