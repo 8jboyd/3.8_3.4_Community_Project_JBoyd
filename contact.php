@@ -36,6 +36,7 @@
 		</div>
 		
 		<div class="nav">
+			<ol><a href="logout.php">Log Out</a></ol>
 			<ul><a href="login.php">Login</a></ul>
 			<li><a href="signup.php">Sign Up</a></li>
 		</div>
