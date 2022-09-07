@@ -1,10 +1,14 @@
 <?php
+	ini_set('display_errors',0) // Remvoing notice error for burger menu
+	  							// (messes up the burger menu when logining in for the first time)
+?>
 
+<?php
 	ob_start();
 	session_start();
 		$error = NULL;
 		if($_SERVER["REQUEST_METHOD"] == "POST") {
-			//connect/php (tells where to connect servername dbaseName, username, password)
+			//connect/php (tells where to connect servername dbaseName, Username, Password)
 			require "13csi_Database_Assessment_mysqli.php";
 			// username and password sent from form
 			$myusername = mysqli_real_escape_string($conn,$_POST['Username']);
@@ -20,7 +24,8 @@
 			// If result matched $myusername and $mypassword, table row must be 1 row
 			if($count == 1) {
 				$_SESSION['login_user'] = $myusername;
-				header("location: connect3.php");
+				header("location: index.php");
+
 			} else {
 				$error = "ERROR! Your Login Name or Password is invalid";
 				}
@@ -36,7 +41,7 @@
 		<link rel="stylesheet" href="css/style.css">
 		
 		<meta charset="UTF-8">
-		<meta name="Keywords" content="html5, layout, 10 Credit Project, Jake B"/>
+		<meta name="Keywords" content="html5, layout, Zulu Music Website, Jake B"/>
 		<meta name="Author" content="Jake Boyd"/>
 		<meta name="Description" content="10 Credit Project - Jake Boyd">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -49,22 +54,22 @@
 		<div class="hamburger"><div></div></div>
 			<div class="menu">
 				<div>
-					<div>
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="page2.html">Music by Title</a></li>
-							<li><a href="page3.html">Music by Genre</a></li>
-							<li><a href="contact.php">Contact</a></li>
-						</ul>
-					</div>
+					<?php
+						if($_SESSION['login_user'] != 'Admin'){
+							require "burger.php";
+						}
+						else {
+							require "burger-admin.php";
+						}
+					?>
 				</div>
 			</div>
 		</div>
 		
 		<div class="nav">
-			<ol><a href="logout.php">Log Out</a></ol>
-			<ul><a href="login.php">Login</a></ul>
-			<li><a href="signup.php">Sign Up</a></li>
+			<?php
+				require "nav.php"
+			?>
 		</div>
 		
 		<div class="heading">
@@ -74,24 +79,24 @@
 		
 		<div class="contact_container3">
 			<h2>Login</h2><br>
-			<form action="connect3.php" method="post" target="_blank">
+			<form method="post" method="post" target="_blank" id="login_user">
 			<!-- Username Field -->
 			<div class="row">
 				<div class="column">
 					<h3><label for="Username">Username</label></h3>
 				</div>
 				<div class="column2">
-					<input type="text" id="Username" name="Username" placeholder="Username" style="width:350px; height:25px;">
+					<input type="text" name="Username" placeholder="Username" style="width:350px; height:25px;">
 				</div>
 			</div>
 			<br>
-			<!-- Username Field -->
+			<!-- Password Field -->
 			<div class="row">
 				<div class="column">
 					<h3><label for="Password">Password</label></h3>
 				</div>
 				<div class="column2">
-					<input type="password" id="Password" name="Password" placeholder="Password" style="width:350px; height:25px;">
+					<input type="password" name="Password" placeholder="Password" style="width:350px; height:25px;">
 				</div>
 			</div>
 
