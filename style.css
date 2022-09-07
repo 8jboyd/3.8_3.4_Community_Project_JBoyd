@@ -1,13 +1,10 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap'); /* font-family: 'Roboto', sans-serif; */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap'); /* font-family: 'Lato', sans-serif; */
-@import url('https://fonts.googleapis.com/css2?family=Cairo&family=PT+Sans:wght@700&family=Quicksand&display=swap'); /* font-family: 'Cairo', sans-serif; font-family: 'PT Sans', sans-serif; font-family: 'Quicksand', sans-serif; */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap'); /* font-family: 'Inter', sans-serif; */
+
 
 /* Burger Menu */
 :root{
-	--primary-color: rgba(0, 17, 185, 0.7);
-	--overlay-color: rgba(24, 39, 51, 0.85);
+	--primary-color: rgba(204, 24, 27, 0.7);
+	--overlay-color: rgba(89, 93, 95, 0.85);
 	--menu--speed: 0.75s;
 }
 
@@ -93,7 +90,7 @@ body{
 .content{
 	height: 100%;
 	width: 100%;
-	background-color: #002B51;
+	background-color: #120602;
 	color: white;
 	font-size: 5vh;
 	font-family: 'Roboto', sans-serif;
@@ -126,7 +123,7 @@ body{
 }
 
 .footer{
-	background-color: #120602;
+	background-color: #A41316;
 	height: 8vh;
 	text-align: center;
 	color: white;
@@ -139,7 +136,7 @@ body{
 }
 
 .footer2{
-	background-color: #002B51;
+	background-color: #120602;
 	height: 8;
 	text-align: center;
 	color: white;
@@ -149,7 +146,7 @@ body{
 }
 
 .footer3{
-	background-color: #002B51;
+	background-color: #120602;
 	height: 8;
 	text-align: center;
 	color: white;
@@ -159,7 +156,7 @@ body{
 }
 
 .footer4{
-	background-color: #002B51;
+	background-color: #120602;
 	height: 8;
 	text-align: center;
 	color: white;
@@ -214,7 +211,7 @@ body{
 
 .heading{
 	height: 20vh;
-	background-color: #002B51;
+	background-color: #A41316;
 	color: white;
 	font-size: 7.5vh;
 	text-align: center;
