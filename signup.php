@@ -19,22 +19,22 @@
 		<div class="hamburger"><div></div></div>
 			<div class="menu">
 				<div>
-					<div>
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="page2.html">Music by Title</a></li>
-							<li><a href="page3.html">Music by Genre</a></li>
-							<li><a href="contact.php">Contact</a></li>
-						</ul>
-					</div>
+					<?php
+						if($_SESSION['login_user'] != 'Admin'){
+							require "burger.php";
+						}
+						else {
+							require "burger-admin.php";
+						}
+					?>
 				</div>
 			</div>
 		</div>
 		
 		<div class="nav">
-			<ol><a href="logout.php">Log Out</a></ol>
-			<ul><a href="login.php">Login</a></ul>
-			<li><a href="signup.php">Sign Up</a></li>
+			<?php
+				require "nav.php"
+			?>
 		</div>
 		
 		<div class="heading">
