@@ -11,7 +11,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="icon" type="image/png" href="images/gannet-icon.png"/>
+	<link rel="icon" type="image/png" href="images/ZULU.png"/>
 	<link rel = "stylesheet" href = "css/style.css"/>
 	<link rel = "stylesheet" href = "css/menu.css"/>
 		
@@ -46,23 +46,44 @@
 		?>
 	</div>
 	
+	<?php
+		require("13csi_Database_Assessment_mysqli.php")			
+	?>
+	
 	<div class="header">
 		<h1>Z U L U</h1>
 	</div>
 	<br>
+
 	<div class="content">
-		<h3>Top Songs:</h3>
-		<hr>
-		<div class="image"><img src="images/image_placeholder3.jpg" width="99.7%"></div>
-		<hr>
-		<div class="image"><img src="images/image_placeholder3.jpg" width="99.7%"></div>
-		<hr>
-		<div class="image"><img src="images/image_placeholder3.jpg" width="99.7%"></div>
-		<hr>
-	</div>
-	<!-- Copyright Statement -->
-	<div class="footer">
-		<p>&copy; Copyright Jake Boyd, all rights reserved, Tawa College 2022</p>
-	</div>	
+		<h3>Top Songs:</h3><br>
+		<?php
+			$query = ("SELECT s.Song_ID, s.Title, r.Artist, l.Album, g.Genre, s.Duration, s.Seconds, s.Size, s.Image, SUM(Seconds) over() AS TotalTime FROM Song_Details AS s INNER JOIN Artist r ON r.Artist_PK = s.Artist_PK INNER JOIN Album l ON l.Album_PK = s.Album_PK INNER JOIN Genre g ON g.Genre_PK = s.Genre_PK ORDER BY s.Title DESC, r.Artist_PK DESC");	
+				
+			//Runs and stores the query using the variables $conn and $query
+			$result = mysqli_query($conn, $query);
+			
+		//Runs in a 'while' loop
+		while($output=mysqli_fetch_array($result))
+			{			
+		?>
+		<a href="song.php?
+			Image=<?php echo $output['Image']; ?>&
+			Title=<?php echo $output['Title']; ?>&
+			Artist=<?php echo $output['Artist']; ?>&
+			Album=<?php echo $output['Album']; ?>&
+			Genre=<?php echo $output['Genre']; ?>&
+			Seconds=<?php echo $output['Seconds']; ?>&
+			Size=<?php echo $output['Size'] ?>&
+			TotalTime=<?php echo $output['TotalTime']; ?>">
+		   
+		<div class="image"><img src="images/<?php echo $output['Image']; ?>" title="<?php echo $output['Title']; ?>" alt="<?php echo $output['Title']; ?>" width="300" height="300"></a></div></div>
+		<?php
+			//Closes the output while loop
+			}
+		?>
+		<br>
+
+		</div>
 	</body>
 </html>
