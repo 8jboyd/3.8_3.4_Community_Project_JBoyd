@@ -1,4 +1,14 @@
-<!DOCTYPE html>
+<?php
+        session_start();
+        if(!isset($_SESSION['login_user'])){
+			header("location: login.php");
+				}
+		else{
+			$User = $_SESSION['login_user'];
+        }
+?>
+
+<!DOCTYPE html> <!-- Add the above stuff to all pages -->
 <html>
 <head>
 	<link rel="icon" type="image/png" href="images/gannet-icon.png"/>
@@ -18,14 +28,14 @@
 		<div class="hamburger"><div></div></div>
 		<div class="menu">
 			<div>
-				<div>
-					<ul>
-						<li><a href="index.html">Home</a></li> <!-- Home page -->
-						<li><a href="page2.html">Music by Title</a></li> <!-- Page with Music -->
-						<li><a href="page3.html">Music by Genre</a></li> <!-- Page with Music 2 -->
-						<li><a href="contact.php">Contact</a></li> <!-- Contact page -->
-					</ul>
-				</div>
+				<?php
+					if($_SESSION['login_user'] != 'Admin'){
+						require "burger.php";
+					}
+					else {
+						require "burger-admin.php";
+					}
+				?>
 			</div>
 		</div>
 	</div>
@@ -33,9 +43,9 @@
 	<header class="showcase">
 	<div class="container showcase-inner">
 		<br><br><br><br><br><br><br><br><br><br>
-		<h1>z u l u</h1>
+		<h1>Z U L U</h1>
 		<p>It is important to take care of the patient, to be followed by the doctor, but it is a time of great pain and suffering. For let me come to the smallest detail, no one should 			   practice any kind of work except that.</p>
-		<a href="page2.html" class="btn">Start Listening</a> <!-- Link to the music page (2nd page) -->
+		<a href="page2.php" class="btn">Start Listening</a> <!-- Link to the music page (2nd page) -->
 		<br><br><br><br><br><br><br><br><br><br>
 		<div id="footer">
 			&copy; Copyright Jake Boyd, all rights reserved, Tawa College 2022
